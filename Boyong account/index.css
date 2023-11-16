@@ -1,0 +1,124 @@
+:root {
+    --primary-text: rgb(0, 25, 36);
+    --primary-bg: #F6F5F5 !important;
+    --secondary-text: #0DCAF0 !important;
+    --secondary-bg: white;
+    --btn-shadow: rgba(5, 3, 3, 0.271);
+}
+
+/* CONTANTS */
+.x-text-secondary{
+    color: var(--secondary-text);
+}
+
+
+.x-bg-secondary {
+    background-color: var(--primary-bg);
+}
+
+body {
+    background-color: var(--secondary-bg);
+}
+
+/* HEADER */
+/* logo */
+header {
+    height: 90px;
+}
+
+
+.logo-side {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    max-width: 70px;
+    margin-top: 10px;
+}
+
+.h-title {
+    padding-top: 25px;
+    padding-left: 5px;
+}
+
+.h-title h5 {
+    font-weight: 500;
+    color: var(--primary-text);
+}
+
+.h-title h6 {
+    color: gray;
+    letter-spacing: 3px;
+}
+
+
+/* DROPDOWN  MENU*/
+.menuDrop .dropdown-menu {
+    border-bottom: 2px solid var(--secondary-text);
+    position: absolute;
+    right: 0;
+}
+
+
+.menuDrop:hover .dropdown-menu {
+    display: block !important;
+    animation: menuDrop 0.2s ease-in;
+}
+
+@keyframes menuDrop {
+    0% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(to right, #0055626e, #05bed700), url('./asset/img/herobg.png');
+    min-height: 220px;
+    box-shadow: 0rem 0.15rem #048b9d57;
+}
+
+/* SERVICES SECTION */
+.x-card {
+    position: relative;
+    max-width: 22rem;
+    border: 1px solid #BDBEBF;
+    background-color: #F5FCFF;
+    width: 100%;
+    box-shadow: 2px 0px 3px rgba(1, 55, 73, 0.15);
+}
+
+.x-card h4 {
+    color: #00313b;
+}
+
+.x-card .x-badge{
+    background-color: red;
+    position: absolute;
+    color: white;
+    right: 0.4rem;
+    top:0.3rem;
+    width: 1.9rem;
+    height: 1.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 3px rgba(1, 55, 73, 0.15);
+    cursor: pointer;
+}
+
+.x-card-footer{
+    max-width: 22rem;
+    border: 1px solid #BDBEBF;
+    background-color: #F5F9FB;
+    width: 100%;
+    box-shadow: 2px 3px 3px rgba(1, 55, 73, 0.15);
+}

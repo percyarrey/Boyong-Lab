@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./asset/logo.jpg" sizes="32*32">
+  <title>Boyong Lab Enterprise</title>
+  <link href="./node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- INFORMATION -->
+  <div style="height: 1.8rem;">
+    <div class="d-flex justify-content-between h-100 container-md ps-md-3">
+      <div class="d-flex gap-2 align-items-center">
+        <a href="#" class="theme border-end pe-1"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="theme border-end pe-1"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="theme border-end pe-1"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="theme"><i class="bi bi-instagram"></i></a>
+      </div>
+
+
+      <div class="h-100 bgtheme d-flex justify-content-center align-items-center px-3">
+        <a href="/contact" class=" rounded-0 text-white text-decoration-none">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+  <hr class="m-0 p-0">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-light navbar-expand-lg  sticky-top bgNav border-bottom py-0  shadow-sm " id="myNavbar"
+    style="transition: all 0.3s ease;">
+    <div class="container-md">
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="logo-side">
+          <div>
+            <a href="/"><img src="asset/logo.png" class="img-fluid logo" /></a>
+          </div>
+          <div class="h-title">
+            <h5>Boyong Lab</h5>
+            <h6>Enterprise</h6>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-start" style="transition: all 0.2s ease-in;" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <div class="d-flex align-items-center justify-content-center">
+              <span class="fw-bold theme fs-5">Boyong Lab Enterprise</span>
+            </div>
+          </h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown menuDrop">
+              <a class="nav-link dropdown-toggle " href="#" id="dropdownId" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"
+                style="color: var(--primary-text) !important; cursor: pointer;">Our Platforms</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="/cloud.html" style="color: var(--primary-text) !important;">Cloud</a>
+                <a class="dropdown-item" href="education.html"
+                  style="color: var(--primary-text) !important;">Education</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown menuDrop">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"
+                style="color: var(--primary-text) !important; cursor: pointer;">Our Services</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="/cloud-infrastructure-management.html"
+                  style="color: var(--primary-text) !important;">Cloud Infrastructure Management</a>
+                <a class="dropdown-item" href="devops-and-server-administration.html"
+                  style="color: var(--primary-text) !important;">DevOps and Server Administration</a>
+                <a class="dropdown-item" href="privacy-and-services.html"
+                  style="color: var(--primary-text) !important;">Privacy and Security</a>
+                <a class="dropdown-item" href="big-data-analytics-and-ai.html"
+                  style="color: var(--primary-text) !important;">Big Data, Analytics and AI</a>
+                <a class="dropdown-item" href="custom-software-development.html"
+                  style="color: var(--primary-text) !important;">Custom Software Developement</a>
+                <a class="dropdown-item" href="vocational-training.html"
+                  style="color: var(--primary-text) !important;">Vocational Training</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="./about.html" style="color: var(--primary-text) !important;">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html" style="color: var(--primary-text) !important;">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/account" style="color: var(--primary-text) !important;"><i
+                  class="bi bi-person-fill me-2"></i><span>Account</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- navbar-toggler-icon -->
+      <div class="d-flex gap-3">
+        <button class="navbar-toggler border-2" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <!-- HEROSECTION -->
+    <section class="hero-section" style="
+        background: linear-gradient(to right,#0d2930ee 20%,#0d293057),url(./asset/about.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 20rem;
+        display: flex;
+        align-items: end;
+      ">
+      <div class="container-md">
+        <div class="text-white display-5 fw-bold" style="font-family: roboto;">
+          <div style="width: fit-content;">
+            <div class="aboutSlide">
+              About Us
+            </div>
+            <div class="rounded-end mt-2" style="
+                        background-color: rgb(98, 176, 199);
+                        height: 0.35rem;
+                        width: 80%;
+                    "></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr style="opacity: 0.08;" class="m-0 p-0" />
+
+    <!-- ABOUT  -->
+    <section class="x-bg-secondary">
+      <div class="container-md">
+        <div class="row gy-2 mt-4 d-flex justify-content-center justify-content-lg-start">
+          <div class="col-11 rounded-1 shadow-sm col-lg-10 py-3"
+            style="font-size: 18px;background-color: var(--primary-bg);">
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <div class="fs-4 mt-1 mb-1" style="font-family: roboto;">
+                  <span class="t-opacity " style="font-family:roboto;font-weight: 600;">Our Story</span>
+                </div>
+                <div class="t-opacity fs-3 fw-bold" style="font-family: Arial, Helvetica, sans-serif">
+                  We are full of interesting <br> creative ideas!
+                </div>
+                <p class="t-opacity" style="text-align: justify;">
+                  Boyong Lab Enterprise is an IT service provider whose technical expertise spans across multiple IT
+                  domains. The solutions we put in place and the services we offer remain the primary ways through which
+                  we express our technical abilities.
+                </p>
+                <p class="t-opacity" style="text-align: justify;">
+                  Due to the constant change in trends in the industry, we are constantly looking out on how to
+                  effectively accompany businesses in their respective missions while helping our society overcome
+                  certain challenges. Our strategies require of us to put in place innovative solutions whose operations
+                  accommodate your needs. For we are mindful of the fact that it is in meeting your needs that we can
+                  generate maximum satisfaction; at Boyong Lab, this remains a pleasurable experience that we are always
+                  looking forward to sharing with you.
+                </p>
+
+              </div>
+              <div class="col-12 col-lg-4 d-flex align-items-center">
+                <div class="p-3 shadow-sm rounded-3" style="background-color: #ebededbd;">
+                  <img src="./asset/hero2.jpg" class="rounded-2 about-img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr style="opacity: 0.08;" class="m-0 p-0" />
+
+    <!-- CONTACT US -->
+    <section class="x-bg-secondary">
+      <div class="container-md">
+        <div class="row gy-2 mt-4 d-flex justify-content-center justify-content-lg-start">
+          <div class="col-2">
+
+          </div>
+          <div class="col-11 rounded-1 shadow-sm col-lg-10 py-3"
+            style="font-size: 18px;background-color: var(--primary-bg);">
+            <div class="row">
+              <div class="col-12 col-lg-2 d-flex align-items-center order-1 order-lg-0">
+                <div class="col-12 col-lg-2 d-flex justify-content-center align-items-center">
+                  <div class="p-1 rounded-3 d-none d-lg-block">
+                    <a href="/contact" class="btn btn-outline-theme fs-3 about-a"> Contact Us</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-10 order-0 pe-lg-5">
+                <div class="fs-4 mt-1 mb-1" style="font-family: roboto;">
+                  <span class="t-opacity theme" style="font-family:roboto;font-weight: 600;">Get In Touch</span>
+                </div>
+                <p class="t-opacity" style="text-align: justify;">
+                  After going through our existing solutions and services, do not hesitate to contact us for more
+                  information or a demo as the need may present itself.
+                </p>
+                <p class="t-opacity" style="text-align: justify;">
+                  In case where our existing solutions and services do not align with your business case, please still
+                  get in touch with us. With your contribution, we can have a better understanding of your business
+                  unique needs and make the necessary recommendations. Please consider initiating this collaboration or
+                  say 'Hi' by leaving us an offline message. We are very delighted hearing from you.
+                  
+                </p>
+                <div class="d-flex justify-content-center">
+                  <a class="btn btn-theme px-5" href="./contact.html">Contact us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr style="opacity: 0.08;" class="m-0 p-0" />
+    <!-- OUR PARTNERS -->
+
+    <section class="x-bg-secondary">
+      <div class="fw-bold text-center display-5 pt-4" style="font-family: Arial, Helvetica, sans-serif; opacity: 0.85;">
+        Our Partners</div>
+      <p class="text-center t-opacity">Where can you find us again on silicon mountain</p>
+    </section>
+  </main>
+  <hr style="opacity: 0.08;" class="m-0 p-0" />
+  <footer>
+    <div class="container-md pt-4">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div>
+            <div class="logo-side">
+              <div>
+                <a href="/"><img src="asset/logo.png" class="img-fluid logo" /></a>
+              </div>
+              <div class="h-title">
+                <h5>Boyong Lab</h5>
+                <h6>Traning Center</h6>
+              </div>
+            </div>
+          </div>
+          <div class="ps-2 opacity-75 x-footer-address">
+            <p><span>ADDRESS:</span> Cameroon, Buea, Mile 17</p>
+            <p><span>TELEPHONE:</span> +237 xxxxxxxx</p>
+            <p><span>EMAIL:</span> xxxxxxxxxx@gmail.com</p>
+          </div>
+       </div>
+        <div class="col-md-6 col-lg-2">
+          <h4 class="theme">Platforms</h4>
+          <ul class=" list-unstyled ps-2 opacity-75">
+            <li class="nav-item"><a class="nav-link" href="/login">Paps Man</a></li>
+            <li class="nav-item"><a class="nav-link" href="/login">paps Solution</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <h4 class="theme">Quick links</h4>
+          <ul class=" list-unstyled ps-2 opacity-75">
+            <li class="nav-item"><a class="nav-link" href="/login">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/About">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact">Account</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h4 class="theme">Newsletter</h4>
+          <div>
+            <p class=" opacity-75">Subscribe by our newsletter and get weekly updates.</p>
+          </div>
+          <div>
+            <form>
+              <fieldset>
+                <div class="d-flex">
+                  <input class="form-control rounded-0 rounded-start" type="email" placeholder="Enter Your Mail"
+                    name="email" />
+                  <button class="btn btn-theme  rounded-0 rounded-end" type="submit">Subscribe</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="text-center py-3"><span class="theme">Copyright &copy; 2023 Boyong Lab Enterprise.</span> All rights
+      reserved.</div>
+  </footer>
+
+
+  <script src="index.js"></script>
+  <script src="./node_modules/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
